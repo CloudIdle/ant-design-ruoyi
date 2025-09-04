@@ -21,7 +21,7 @@ export default [
     component: './404',
   },
   {
-    name:'首页',
+    name:'home',
     path: '/welcome',
     component: './Welcome',
   },

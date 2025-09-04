@@ -15,7 +15,7 @@ const useStyles = createStyles(({ token }) => {
             borderRadius: token.borderRadius,
             transition: 'background-color 0.3s',
             '&:hover': {
-                backgroundColor: token.colorBgSecondary,
+                backgroundColor: token.colorTextSecondary,
             },
         },
         icon: {

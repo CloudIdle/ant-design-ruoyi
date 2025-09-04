@@ -64,6 +64,12 @@ export async function getInitialState(): Promise<{
 export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) => {
   return {
     actionsRender: () => [<WeatherCity key="weatherCity" />, <Question key="doc" />, <SelectLang key="SelectLang" />],
+    menuHeaderRender: () => {
+      return <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: '4px', fontSize: '16px' }}>
+        <div>xxx公司</div>
+        <div>绩效评定:86分</div>
+      </div>
+    },
     avatarProps: {
       src: initialState?.currentUser?.avatar,
       title: <AvatarName />,
@@ -123,7 +129,7 @@ export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) =
         </Link>,
       ]
       : [],
-    menuHeaderRender: undefined,
+    // menuHeaderRender: undefined,
     // 自定义 403 页面
     // unAccessible: <div>unAccessible</div>,
     // 增加一个 loading 的状态

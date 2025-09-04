@@ -114,7 +114,7 @@ const Welcome: React.FC = () => {
               color: token.colorTextHeading,
             }}
           >
-            欢迎使用 Ant Design Pro
+            欢迎使用 本系统
           </div>
           <p
             style={{
@@ -136,7 +136,7 @@ const Welcome: React.FC = () => {
               gap: 16,
             }}
           >
-            <InfoCard
+            {/* <InfoCard
               index={1}
               href="https://umijs.org/docs/introduce/introduce"
               title="了解 umi"
@@ -153,6 +153,12 @@ const Welcome: React.FC = () => {
               title="了解 Pro Components"
               href="https://procomponents.ant.design"
               desc="ProComponents 是一个基于 Ant Design 做了更高抽象的模板组件，以 一个组件就是一个页面为开发理念，为中后台开发带来更好的体验。"
+            /> */
+            }
+                        <InfoCard
+              index={1}
+              title="安全标识"
+              desc="安全标识：所有平台用户，均可以此畅聊安全生产。"
             />
           </div>
         </div>

@@ -7,7 +7,7 @@ export default {
   'menu.login': 'Login',
   'menu.register': 'Register',
   'menu.register-result': 'Register Result',
-  'menu.dashboard': 'Equipment Monitor',
+  'menu.dashboard': 'Dashboard',
   'menu.dashboard.analysis': 'Safety Status Dashboard',
   'menu.dashboard.monitor': 'Monitor',
   'menu.dashboard.workplace': 'Workplace',

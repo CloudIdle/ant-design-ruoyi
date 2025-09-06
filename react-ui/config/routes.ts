@@ -104,6 +104,11 @@ export default [
         path: '/dashboard/analysis',
         component: './Dashboard/Analysis',
       },
+      {
+        name: 'chat',
+        path: '/dashboard/chat',
+        component: './Dashboard/Chat',
+      },
     ]
   },
 ];

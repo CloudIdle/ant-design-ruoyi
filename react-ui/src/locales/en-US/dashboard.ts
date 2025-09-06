@@ -12,4 +12,9 @@ export default {
   'dashboard.analysis.warning.records': 'Safety Warning Module',
   'dashboard.analysis.stores.title': 'Equipment Conversion Rate',
   'dashboard.analysis.stores.rate': 'Conversion Rate',
+    // 安全畅聊模块
+  'dashboard.chat.title': 'Safe Chat',
+  'dashboard.chat.onlineUsers': 'Online Users',
+  'dashboard.chat.inputPlaceholder': 'Input message, press Enter to send, Shift+Enter for line break...',
+  'dashboard.chat.send': 'Send',
 };

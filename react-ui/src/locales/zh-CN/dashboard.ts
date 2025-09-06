@@ -12,4 +12,9 @@ export default {
   'dashboard.analysis.warning.records': '安全预警模块',
   'dashboard.analysis.stores.title': '设备转化率',
   'dashboard.analysis.stores.rate': '转化率',
+  // 安全畅聊模块
+  'dashboard.chat.title': '安全畅聊',
+  'dashboard.chat.onlineUsers': '在线用户',
+  'dashboard.chat.inputPlaceholder': '输入消息，按Enter发送，Shift+Enter换行...',
+  'dashboard.chat.send': '发送',
 };

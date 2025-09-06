@@ -12,4 +12,9 @@ export default {
   'dashboard.analysis.warning.records': '安全預警模塊',
   'dashboard.analysis.stores.title': '設備轉化率',
   'dashboard.analysis.stores.rate': '轉化率',
+  // 安全畅聊模块
+  'dashboard.chat.title': '安全畅聊',
+  'dashboard.chat.onlineUsers': '線上用戶',
+  'dashboard.chat.inputPlaceholder': '輸入消息，按Enter發送，Shift+Enter換行...',
+  'dashboard.chat.send': '發送',
 };

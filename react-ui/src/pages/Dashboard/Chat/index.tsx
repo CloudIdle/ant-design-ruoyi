@@ -27,9 +27,9 @@ const mockUsers = [
   { userId: '2', userName: '李四', userTitle: '技术员', workshop: '装配车间', avatar: 'https://gw.alipayobjects.com/zos/rmsportal/cnrhVkzwxjPwAaCfPbdc.png' },
   { userId: '3', userName: '王五', userTitle: '质检员', workshop: '质检车间', avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png' },
   { userId: '4', userName: '赵六', userTitle: '安全员', workshop: '安全部', avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png' },
-  { userId: '5', userName: '孙七', userTitle: '设备操作员', workshop: '冲压车间', avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.svg' },
-  { userId: '6', userName: '周八', userTitle: '设备操作员', workshop: '冲压车间', avatar: 'https://gw.alipayobjects.com/zos/rmsportal/cnrhVkzwxjPwAaCfPbdc.svg' },
-  { userId: '7', userName: '吴九', userTitle: '设备操作员', workshop: '冲压车间', avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.svg' },
+  { userId: '5', userName: '孙七', userTitle: '设备操作员', workshop: '冲压车间', avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png' },
+  { userId: '6', userName: '周八', userTitle: '设备操作员', workshop: '冲压车间', avatar: 'https://gw.alipayobjects.com/zos/rmsportal/cnrhVkzwxjPwAaCfPbdc.png' },
+  { userId: '7', userName: '吴九', userTitle: '设备操作员', workshop: '冲压车间', avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png' },
 ];
 
 // 模拟聊天内容池
@@ -241,18 +241,18 @@ const ChatRoom: React.FC = () => {
     <PageContainer>
       <Card
         loading={loading}
-        title={
-          <div className={styles.header}>
-            <MessageOutlined className={styles.headerIcon} />
-            <FormattedMessage id="chat.title" defaultMessage="安全畅聊" />
-          </div>
-        }
+        // title={
+        //   <div className={styles.header}>
+        //     <MessageOutlined className={styles.headerIcon} />
+        //     <FormattedMessage id="dashboard.chat.title" defaultMessage="安全畅聊" />
+        //   </div>
+        // }
         className={styles.container}
       >
         <Row gutter={[16, 16]}>
           {/* 在线用户列表 */}
           <Col xs={24} md={6} className={styles.userListContainer}>
-            <Card title={<FormattedMessage id="chat.onlineUsers" defaultMessage="在线用户" />}>
+            <Card title={<FormattedMessage id="dashboard.chat.onlineUsers" defaultMessage="在线用户" />}>
               <List
                 dataSource={[currentUser, ...mockUsers]}
                 renderItem={(user) => (
@@ -297,7 +297,7 @@ const ChatRoom: React.FC = () => {
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
                   onKeyPress={handleKeyPress}
-                  placeholder={intl.formatMessage({ id: 'chat.inputPlaceholder', defaultMessage: '输入消息，按Enter发送，Shift+Enter换行...' })}
+                  placeholder={intl.formatMessage({ id: 'dashboard.chat.inputPlaceholder', defaultMessage: '输入消息，按Enter发送，Shift+Enter换行...' })}
                   autoSize={{ minRows: 2, maxRows: 6 }}
                   className={styles.textArea}
                 />
@@ -309,7 +309,7 @@ const ChatRoom: React.FC = () => {
                     loading={isSending}
                     disabled={!inputValue.trim() || isSending}
                   >
-                    {intl.formatMessage({ id: 'chat.send' })}
+                    {intl.formatMessage({ id: 'dashboard.chat.send' })}
                   </Button>
                 </div>
               </div>

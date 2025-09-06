@@ -92,11 +92,13 @@ const Welcome: React.FC = () => {
         style={{
           borderRadius: 8,
         }}
-        bodyStyle={{
-          backgroundImage:
-            initialState?.settings?.navTheme === 'realDark'
-              ? 'background-image: linear-gradient(75deg, #1A1B1F 0%, #191C1F 100%)'
-              : 'background-image: linear-gradient(75deg, #FBFDFF 0%, #F5F7FF 100%)',
+        styles={{
+          body: {
+            backgroundImage:
+              initialState?.settings?.navTheme === 'realDark'
+                ? 'linear-gradient(75deg, #1A1B1F 0%, #191C1F 100%)'
+                : 'linear-gradient(75deg, #FBFDFF 0%, #F5F7FF 100%)',
+          }
         }}
       >
         <div
@@ -154,12 +156,12 @@ const Welcome: React.FC = () => {
               href="https://procomponents.ant.design"
               desc="ProComponents 是一个基于 Ant Design 做了更高抽象的模板组件，以 一个组件就是一个页面为开发理念，为中后台开发带来更好的体验。"
             /> */
-            }
-                        <InfoCard
+            <InfoCard
               index={1}
               title="安全标识"
               desc="安全标识：所有平台用户，均可以此畅聊安全生产。"
             />
+            }
           </div>
         </div>
       </Card>

@@ -100,7 +100,7 @@ const Analysis: React.FC = () => {
                   <Progress
                     type="dashboard"
                     percent={store.rate}
-                    width={80}
+                    size={80}
                     strokeColor={store.color}
                   />
                 </div>
@@ -124,7 +124,7 @@ const Analysis: React.FC = () => {
       xField: 'month',
       yField: 'count',
       label: {
-        position: 'middle',
+        position: 'top',
         style: {
           fill: '#FFFFFF',
           opacity: 0.6,

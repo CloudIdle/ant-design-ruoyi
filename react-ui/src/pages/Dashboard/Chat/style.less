@@ -1,9 +1,15 @@
-// 样式文件，无需导入antd主题
+// 样式文件，支持明暗两种主题
 
 .container {
   height: calc(100vh - 120px);
   display: flex;
   flex-direction: column;
+  padding: 24px;
+  background-color: #f0f2f5;
+  // 暗黑模式下的背景颜色
+  .ant-pro-layout[data-theme='dark'] & {
+    background-color: #000c17;
+  }
 }
 
 .header {
@@ -24,6 +30,14 @@
   border: 1px solid #f0f0f0;
   border-radius: 4px;
   overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  // 暗黑模式下的聊天容器样式
+  .ant-pro-layout[data-theme='dark'] & {
+    background-color: #141414;
+    border-color: #2c2c2c;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.05);
+  }
 }
 
 .messagesContainer {
@@ -31,6 +45,32 @@
   padding: 16px;
   overflow-y: auto;
   background-color: #fafafa;
+  
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  // 暗黑模式下的消息容器样式
+  .ant-pro-layout[data-theme='dark'] & {
+    background-color: #0d1117;
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    &::-webkit-scrollbar-track {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
 }
 
 .messageItem {
@@ -80,11 +120,19 @@
 .userName {
   font-weight: 500;
   margin-right: 8px;
+  // 暗黑模式下的用户名颜色
+  .ant-pro-layout[data-theme='dark'] & {
+    color: rgba(255, 255, 255, 0.85);
+  }
 }
 
 .selfUserName {
   font-weight: 500;
   margin-left: 8px;
+  // 暗黑模式下的用户名颜色
+  .ant-pro-layout[data-theme='dark'] & {
+    color: rgba(255, 255, 255, 0.85);
+  }
 }
 
 .userTitleBadge {
@@ -94,11 +142,19 @@
 
 .userTitle {
   font-size: 12px;
+  // 暗黑模式下的用户标题颜色
+  .ant-pro-layout[data-theme='dark'] & {
+    color: rgba(255, 255, 255, 0.65);
+  }
 }
 
 .messageTime {
   color: rgba(0, 0, 0, 0.45);
   font-size: 12px;
+  // 暗黑模式下的消息时间颜色
+  .ant-pro-layout[data-theme='dark'] & {
+    color: rgba(255, 255, 255, 0.45);
+  }
 }
 
 .messageBody {
@@ -107,6 +163,12 @@
   border-radius: 8px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   word-wrap: break-word;
+  // 暗黑模式下的消息内容样式
+  .ant-pro-layout[data-theme='dark'] & {
+    background-color: #1f2937;
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.05);
+  }
 }
 
 .selfMessageBody {
@@ -122,11 +184,26 @@
   padding: 16px;
   background-color: #fff;
   border-top: 1px solid #f0f0f0;
+  // 暗黑模式下的输入容器样式
+  .ant-pro-layout[data-theme='dark'] & {
+    background-color: #141414;
+    border-top-color: #2c2c2c;
+  }
 }
 
 .textArea {
   margin-bottom: 12px;
   resize: none;
+  // 暗黑模式下的文本区域样式
+  .ant-pro-layout[data-theme='dark'] & {
+    background-color: #1f2937;
+    color: rgba(255, 255, 255, 0.85);
+    border-color: #374151;
+    
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.45);
+    }
+  }
 }
 
 .actionButtons {
@@ -136,6 +213,34 @@
 
 .userListContainer {
   height: 100%;
+  transition: all 0.3s;
+  // 暗黑模式下的用户列表容器样式
+  .ant-pro-layout[data-theme='dark'] & {
+    .ant-card {
+      background-color: #141414;
+      border-color: #2c2c2c;
+    }
+    
+    .ant-card-head-title {
+      color: rgba(255, 255, 255, 0.85);
+    }
+    
+    .ant-list-item-meta-title {
+      color: rgba(255, 255, 255, 0.85);
+    }
+    
+    .ant-list-item-meta-description {
+      color: rgba(255, 255, 255, 0.65);
+    }
+  }
+}
+
+.userListContainer:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  // 暗黑模式下的用户列表容器悬停样式
+  .ant-pro-layout[data-theme='dark'] & {
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.09);
+  }
 }
 
 .selfUserBadge {
@@ -146,6 +251,10 @@
 .workshopIcon {
   margin-right: 4px;
   color: rgba(0, 0, 0, 0.45);
+  // 暗黑模式下的图标颜色
+  .ant-pro-layout[data-theme='dark'] & {
+    color: rgba(255, 255, 255, 0.45);
+  }
 }
 
 // 自定义滚动条样式
@@ -155,13 +264,25 @@
 
 .messagesContainer::-webkit-scrollbar-track {
   background: #f1f1f1;
+  // 暗黑模式下的滚动条轨道样式
+  .ant-pro-layout[data-theme='dark'] & {
+    background: #1f2937;
+  }
 }
 
 .messagesContainer::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 4px;
+  // 暗黑模式下的滚动条滑块样式
+  .ant-pro-layout[data-theme='dark'] & {
+    background: #4b5563;
+  }
 }
 
 .messagesContainer::-webkit-scrollbar-thumb:hover {
   background: #555;
+  // 暗黑模式下的滚动条滑块悬停样式
+  .ant-pro-layout[data-theme='dark'] & {
+    background: #6b7280;
+  }
 }

@@ -1,6 +1,7 @@
 .container {
   padding: 24px;
   background-color: #f0f2f5;
+  transition: all 0.3s;
 }
 
 .storesContainer {
@@ -9,6 +10,11 @@
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+  
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  }
   
   .storesTitle {
     margin: 0 0 16px 0;
@@ -116,6 +122,12 @@
 }
 
 .warningRecordsCard {
+  transition: all 0.3s;
+  
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  }
+  
   .warningRecordsList {
     height: 400px;
     overflow-y: auto;
@@ -132,5 +144,14 @@
     &::-webkit-scrollbar-track {
       background-color: rgba(0, 0, 0, 0.05);
     }
+  }
+}
+
+// 为所有卡片添加过渡效果
+.ant-card {
+  transition: all 0.3s;
+  
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
   }
 }

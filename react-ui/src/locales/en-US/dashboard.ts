@@ -1,0 +1,15 @@
+export default {
+  'dashboard.analysis.equipment.total': 'Equipment Total',
+  'dashboard.analysis.equipment.fault': 'Faulty Equipment',
+  'dashboard.analysis.equipment.warning': 'Warning Equipment',
+  'dashboard.analysis.equipment.normal': 'Normal Equipment',
+  'dashboard.analysis.personnel.total': 'Personnel Total',
+  'dashboard.analysis.personnel.online': 'Online Personnel',
+  'dashboard.analysis.operation.time': 'Operation Time',
+  'dashboard.analysis.production.statistics': 'Production Statistics',
+  'dashboard.analysis.fault.rank': 'Equipment Fault Ranking',
+  'dashboard.analysis.warning.type': 'Warning Type Distribution',
+  'dashboard.analysis.warning.records': 'Safety Warning Module',
+  'dashboard.analysis.stores.title': 'Equipment Conversion Rate',
+  'dashboard.analysis.stores.rate': 'Conversion Rate',
+};

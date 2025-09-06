@@ -1,0 +1,15 @@
+export default {
+  'dashboard.analysis.equipment.total': '設備總數',
+  'dashboard.analysis.equipment.fault': '故障設備',
+  'dashboard.analysis.equipment.warning': '預警設備',
+  'dashboard.analysis.equipment.normal': '正常設備',
+  'dashboard.analysis.personnel.total': '人員總數',
+  'dashboard.analysis.personnel.online': '線上人員',
+  'dashboard.analysis.operation.time': '操作時間',
+  'dashboard.analysis.production.statistics': '生產數據統計',
+  'dashboard.analysis.fault.rank': '設備故障排行',
+  'dashboard.analysis.warning.type': '安全預警分類占比',
+  'dashboard.analysis.warning.records': '安全預警模塊',
+  'dashboard.analysis.stores.title': '設備轉化率',
+  'dashboard.analysis.stores.rate': '轉化率',
+};

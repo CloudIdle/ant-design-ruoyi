@@ -1,0 +1,15 @@
+export default {
+  'dashboard.analysis.equipment.total': '设备总数',
+  'dashboard.analysis.equipment.fault': '故障设备',
+  'dashboard.analysis.equipment.warning': '预警设备',
+  'dashboard.analysis.equipment.normal': '正常设备',
+  'dashboard.analysis.personnel.total': '人员总数',
+  'dashboard.analysis.personnel.online': '在线人员',
+  'dashboard.analysis.operation.time': '操作时间',
+  'dashboard.analysis.production.statistics': '生产数据统计',
+  'dashboard.analysis.fault.rank': '设备故障排行',
+  'dashboard.analysis.warning.type': '安全预警分类占比',
+  'dashboard.analysis.warning.records': '安全预警模块',
+  'dashboard.analysis.stores.title': '设备转化率',
+  'dashboard.analysis.stores.rate': '转化率',
+};
